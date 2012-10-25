@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="style/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="style/my.css" />
+        
+        <script src="js/jquery-1.7.2.min.js">
+        </script>
+        <script src="js/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script type="text/javascript" src="js/cordova-2.1.0.js"></script>
+        <script src="js/my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Index -->
+        <div id="page1" data-role="page">
+            <div data-role="header" data-theme="a">
+                <h3>
+                    Cordova APIs
+                </h3>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <h5 id="platform">
+                            Platform
+                        </h5>
+                    </div>
+                    <div class="ui-block-b">
+                        <h5 id="version">
+                            Version
+                        </h5>
+                    </div>
+                    <div class="ui-block-a">
+                        <h5 id="uuid">
+                            UUID
+                        </h5>
+                    </div>
+                    <div class="ui-block-b">
+                        <h5 id="name">
+                            Name
+                        </h5>
+                    </div>
+                    <div class="ui-block-a">
+                        <h5 id="xy">
+                            Screen
+                        </h5>
+                    </div>
+                    <div class="ui-block-b">
+                        <h5 id="colorDepth">
+                            Colors
+                        </h5>
+                    </div>
+                </div>
+                <a id="toggleAccel" href="#page1" data-role="button">
+                    Toggle Accelerometer
+                </a>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <h5 id="x">
+                            x
+                        </h5>
+                    </div>
+                    <div class="ui-block-b">
+                        <h5 id="y">
+                            y
+                        </h5>
+                    </div>
+                    <div class="ui-block-c">
+                        <h5 id="z">
+                            z
+                        </h5>
+                    </div>
+                </div>
+                <a id="getLocation" href="#page1" data-role="button">
+                    Get Location
+                </a>
+                <a href="#tel:411" data-role="button">
+                    Call 411
+                </a>
+                <a id="beep" href="#page1" data-role="button">
+                    Beep
+                </a>
+                <a id="vibrate" href="#page1" data-role="button">
+                    Vibrate
+                </a>
+                <a id="show_pic" href="#page1" data-role="button">
+                    Get a Picture
+                </a>
+                <div style="border: 1px solid rgb(184, 184, 184); width: 60px; height: 60px; position: relative; background-color: rgb(251, 251, 251);">
+                    <img style="left: 50%; top: 50%; margin-top: -18px; margin-left: -16px; position: absolute;"
+                    id="test_img" alt="image" src="">
+                </div>
+                <a id="get_contacts" href="#page1" data-role="button">
+                    Get Phone's Contacts
+                </a>
+                <a id="check_network" href="#page1" data-role="button" data-transition="none">
+                    Check Network
+                </a>
+                <a id="toggleCompass" href="#page1" data-role="button" data-transition="none"
+                data-direction="reverse">
+                    Toggle Compass
+                </a>
+                <h4>
+                    Compass Heading
+                </h4>
+                <h4 id="h">
+                    ?
+                </h4>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+                <h3>
+                    Cata
+                </h3>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
